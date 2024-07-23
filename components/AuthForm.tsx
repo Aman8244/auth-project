@@ -125,13 +125,11 @@ const AuthForm = () => {
 
     if (userExists === 0)
         return (
-            <div className='flex justify-center items-center py-auto '>
+            <section className='flex justify-center items-center py-auto '>
                 <Card className='min-w-[40%] my-[2rem]'>
                     <CardHeader>
-                        <CardTitle>
-                            <p className='text-center text-2xl'>
+                        <CardTitle className='text-center text-2xl'>                            
                                 Create your account
-                            </p>
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -220,25 +218,23 @@ const AuthForm = () => {
                     </CardFooter>
                 </Card>
 
-            </div>
+            </section>
         )
 
     return (
-        <div className='flex justify-center items-center py-auto '>
+        <section className='flex justify-center items-center py-auto '>
             <Card className='min-w-[40%] my-[2rem]'>
                 <CardHeader>
-                    <CardTitle>
-                        <p className='text-center text-2xl'>
-                            Login
-                        </p>
+                    <CardTitle className='text-center text-2xl'>
+                        Login
                     </CardTitle>
                     <CardDescription>
-                        <p className='text-center font-semibold text-lg text-black'>
+                        <span className='text-center block font-semibold text-lg text-black'>
                             Welcome back to ECOMMERCE
-                        </p>
-                        <p className='text-center'>
+                        </span>
+                        <span className='text-center block'>
                             The next gen business marketplace
-                        </p>
+                        </span>
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -285,7 +281,7 @@ const AuthForm = () => {
                                 </p>
                             </div>
                             <div>
-                                <Button disabled={clicked}  type='submit' className='uppercase w-full'>
+                                <Button disabled={clicked} type='submit' className='uppercase w-full'>
                                     login
                                 </Button>
                             </div>
@@ -315,7 +311,7 @@ const AuthForm = () => {
                 </CardFooter>
             </Card>
 
-        </div>
+        </section>
     )
 }
 
